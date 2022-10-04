@@ -138,10 +138,6 @@ html, body {
     flex: 1 1 auto;
 }
 
-.page_picture{
-    background-image: url("img/mainblock/01.jpg");
-}
-
 .page__services {
     position: relative;
     z-index: 2;
@@ -271,10 +267,13 @@ html, body {
 .advantages_picture{
     opacity: 0.6;
     position: absolute;
-    width: 100%;
-    height: 100%;
 
 
+}
+
+.advanteges_img{
+        height: 100vh;
+        width: 100vw;
 }
 
 
@@ -384,6 +383,8 @@ html, body {
 .advantages {
     padding-top: 180px;
     position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 @media (max-width: 992px) {
     .advantages {
@@ -391,9 +392,7 @@ html, body {
     }
 }
 
-.advantages__header {
-    margin-top: 100px;
-}
+
 
 .advantages__body {
     display: flex;
@@ -451,10 +450,15 @@ html, body {
     line-height: calc(24 / 16);
 }
 
+.advantages_container{
+    position: relative;
+}
+
 /* ----------------- PRACTICE ----------------------- */
 
 .practice {
     padding: 125px 0 80px 0;
+    position: relative;
 }
 
 .practice__header {
@@ -718,9 +722,9 @@ html, body {
 }
 
 .subscribe__input {
-    width: 100%;
+    width: 30%;
     flex: 1 1 auto;
-    min-height: 58px;
+    min-height: 40px;
     padding: 0 20px;
     color: #737373;
     background: #F9F9F9;
@@ -733,14 +737,14 @@ html, body {
 }
 
 .subscribe__button {
-    background: #FF7B47;
+    background: #d5443a;
     color: #fff;
     font-size: 14px;
     line-height: calc(28 / 14);
     border: 1px solid #E6E6E6;
     border-radius: 0 5px 5px 0;
     display: flex;
-    min-height: 58px;
+    min-height: 40px;
     justify-content: center;
     align-items: center;
     padding: 0 22px;
@@ -748,19 +752,20 @@ html, body {
 }
 .subscribe__button:hover {
     cursor: pointer;
-    color: #FF7B47;
-    border: 1px solid #FF7B47;
+    color: #d5443a;
+    border: 1px solid #d5443a;
     background: #fff;
 }
 
 /* ----------------- GET IN TOUCH ----------------------- */
 
 .getintouch {
-    padding: 180px 0 130px 0;
+    padding: 0 0 130px 0;
+    background-color: #fff;
 }
 @media (max-width: 992px) {
     .getintouch {
-        padding: 180px 0 40px 0;
+        padding: 0 0 40px 0;
     }
 }
 
@@ -796,7 +801,7 @@ html, body {
 .item-getintouch_active {
     padding: 80px 15px;
     color: #fff;
-    background: #252B42;
+    background: #8E8D8A;
 }
 @media (max-width: 992px) {
     .item-getintouch_active {
@@ -835,9 +840,9 @@ html, body {
     min-height: 44px;
     line-height: calc(24 / 14);
     padding: 5px 20px;
-    border: 1px solid #FF7B47;
+    border: 1px solid #d5443a;
     border-radius: 5px;
-    color: #FF7B47;
+    color: #d5443a;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -847,7 +852,7 @@ html, body {
 }
 .item-getintouch__button:hover {
     color: #fff;
-    background-color: #FF7B47;
+    background-color: #d5443a;
 }
 
 .item-getintouch_active .item-getintouch__button {
@@ -856,7 +861,7 @@ html, body {
 }
 
 .item-getintouch_active .item-getintouch__button:hover {
-    color: #252B42;
+    color: #d5443a;
     background-color: #fff;
 }
 
